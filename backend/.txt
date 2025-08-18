@@ -1,0 +1,2 @@
+Password=mBmE6yyKUSgMGmN5
+STR=mongodb+srv://nidhisharma0456:mBmE6yyKUSgMGmN5@cluster0.iwpn1ms.mongodb.net/
