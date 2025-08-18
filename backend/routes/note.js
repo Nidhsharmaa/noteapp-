@@ -1,3 +1,4 @@
+//note.js
 import express from "express";
 import Note from "../models/Note.js";
 import jwt from "jsonwebtoken";
