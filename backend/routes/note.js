@@ -1,4 +1,5 @@
 //note.js
+
 import express from "express";
 import Note from "../models/Note.js";
 import jwt from "jsonwebtoken";
@@ -34,6 +35,21 @@ router.post("/", authMiddleware, async (req, res) => {
     const newNote = new Note({ title, content, user: req.userId });
     await newNote.save();
     res.status(201).json(newNote);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+// UPDATE a note
+router.put("/:id", authMiddleware, async (req, res) => {
+  try {
+    const { title, content, tags } = req.body;
+    const note = await Note.findOneAndUpdate(
+      { _id: req.params.id, user: req.userId },
+      { title, content, tags, updatedAt: Date.now() },
+      { new: true }
+    );
+    if (!note) return res.status(404).json({ message: "Note not found" });
+    res.json(note);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }

@@ -3,11 +3,13 @@ import mongoose from "mongoose";
 
 const noteSchema = new mongoose.Schema(
   {
-    title: { type: String, required: true },
-    content: { type: String, required: true },
-    user: { type: mongoose.Schema.Types.ObjectId, ref: "User" } // link notes to a user
+    title: String,
+    content: String,
+   /* tags: [String],*/
+    user: { type: mongoose.Schema.Types.ObjectId, ref: "User" }
   },
-  { timestamps: true }
+  { timestamps: true } //  adds createdAt, updatedAt
 );
 
 export default mongoose.model("Note", noteSchema);
+

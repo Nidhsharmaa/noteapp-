@@ -1,0 +1,157 @@
+/* NotesPage.css */
+
+.notes-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #e63939;
+}
+
+/* Search bar */
+.notes-container input[type="text"][placeholder="Search notes..."] {
+  padding: 0.6rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Note form */
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+
+.note-form input,
+.note-form textarea {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.note-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.note-form button {
+  align-self: flex-start;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/*.note-form button:hover {
+  background-color: #3d9440;
+}
+*/
+/* Notes grid */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.note-card {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note-card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.note-card p {
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+.note-card small {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Tags */
+.tags {
+  margin: 0.5rem 0;
+}
+
+.tags span {
+  display: inline-block;
+  margin-right: 6px;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+/* Buttons in note card */
+.note-card button {
+  margin-right: 8px;
+  margin-top: 0.6rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.note-card button:first-of-type {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.note-card button:first-of-type:hover {
+  background-color: #e0a800;
+}
+
+.note-card button:last-of-type {
+  background-color: #f44336;
+  color: white;
+}
+
+.note-card button:last-of-type:hover {
+  background-color: #d32f2f;
+}
+
+
+
+
+
+
+
+
