@@ -297,21 +297,21 @@ export default function NotesPage({ onLogout }) {
               {(note.imageUrl || note.image) && !editImagePreview && (
                 <div className="image-current">
                   <img
-  src={
-    note.fileUrl?.startsWith("http")
-      ? note.fileUrl
-      : `http://localhost:5000${note.fileUrl}`
-  }
-  alt={note.title}
-  style={{
-    maxWidth: "200px",   // limit width
-    maxHeight: "200px",  // limit height
-    objectFit: "cover",  // crop nicely without distortion
-    borderRadius: "8px", // optional rounded corners
-    display: "block",
-    marginTop: "10px"
-  }}
-/>
+                    src={
+                      note.fileUrl?.startsWith("http")
+                        ? note.fileUrl
+                        : `http://localhost:5000${note.fileUrl}`
+                    }
+                    alt={note.title}
+                    style={{
+                      maxWidth: "200px",   // limit width
+                      maxHeight: "200px",  // limit height
+                      objectFit: "cover",  // crop nicely without distortion
+                      borderRadius: "8px", // optional rounded corners
+                      display: "block",
+                      marginTop: "10px"
+                    }}
+                  />
 
 
                   <label className="checkbox-inline">
