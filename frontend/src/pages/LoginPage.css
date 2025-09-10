@@ -1,0 +1,92 @@
+/*LoginPage.css*/
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width:100vh;
+  /* Background image: pinned notes on corkboard */
+  background: url("https://t3.ftcdn.net/jpg/05/00/78/86/360_F_500788687_IdjsQiWUdvmm9lgxEHwlYkUhL5tYOhcx.jpg")
+    no-repeat center center/cover;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #4a90e2;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #357ab8;
+}
+
+.btn-secondary {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #ddd;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+

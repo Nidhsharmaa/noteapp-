@@ -1,3 +1,4 @@
+
 /* NotesPage.css */
 
 /* Container */
@@ -18,11 +19,16 @@
   background: #ff4d4d;
   border: none;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+  padding: 0.3rem 0.8rem;   /* smaller padding */
+  border-radius: 20px;      /* pill shape */
   cursor: pointer;
   font-weight: 500;
+  font-size: 0.85rem;       /* smaller text */
   transition: 0.2s;
+
+  display: inline-block;    /* 🔑 prevents full-width stretch */
+  width: auto;              /* make button only as wide as text */
+  max-width: fit-content;   /* extra safety */
 }
 
 .logout-btn:hover {
@@ -197,4 +203,14 @@
     width: 100px;
     height: 100px;
   }
+}
+.notes-container {
+  min-height: 100vh;
+  background-image: url("https://thumb.photo-ac.com/25/25498999d045f7fc697fda0cf28e9be2_t.jpeg"); /* <-- path to your background image */
+  background-size: cover;      /* make it cover entire screen */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
