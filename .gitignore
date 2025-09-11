@@ -30,3 +30,5 @@ pnpm-debug.log*
 
 backend/node_modules/
 .env
+backend/.txt
+.txt
